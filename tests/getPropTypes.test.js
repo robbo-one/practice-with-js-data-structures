@@ -1,4 +1,4 @@
-const getValueTypes = require('../getValueTypes')
+const getPropTypes = require('../getPropTypes')
 
 test('getValueTypes returns the types of object properties', function () {
   // Arrange
@@ -12,7 +12,7 @@ test('getValueTypes returns the types of object properties', function () {
   const expected = ['string', 'number', 'function', 'boolean', 'object']
 
   // Act
-  const actual = getValueTypes(objWithDifferentTypes)
+  const actual = getPropTypes(objWithDifferentTypes)
 
   // Assert
   expect(actual).toEqual(expected)
