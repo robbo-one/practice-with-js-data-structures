@@ -1,6 +1,6 @@
 const getPropTypes = require('../getPropTypes')
 
-test('getValueTypes returns the types of object properties', function () {
+test('getPropTypes returns the types of object properties', function () {
   // Arrange
   const objWithDifferentTypes = {
     a: 'c',
