@@ -2,9 +2,9 @@ module.exports = getPropTypes
 
 function getPropTypes (obj) {
   const types = []
-  const keys = Object.keys(obj)
-  for (let i = 0; i < keys.length; i++) {
-    types.push(typeof obj[keys[i]])
+  const values = Object.values(obj)
+  for (let i = 0; i < values.length; i++) {
+    types.push(typeof values[i])
   }
   return types
 }
