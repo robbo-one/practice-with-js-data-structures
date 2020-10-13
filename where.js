@@ -2,7 +2,7 @@ module.exports = where
 
 function where (arr, searchDetails) {
   const found = []
-  for (let obj of arr) {
+  for (const obj of arr) {
     let match = true
     Object.keys(searchDetails).forEach(key => {
       match = match && obj[key] === searchDetails[key]
