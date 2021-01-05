@@ -14,7 +14,7 @@ test('getType returns correct data type for number', function () {
 test('getType returns correct data type for string', function () {
   // Arrange
   const expected = 'string'
-
+  
   // Act
   const actual = getType('123') // Notice the difference between '123' and 123
 
