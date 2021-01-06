@@ -1,8 +1,7 @@
 module.exports = where
 
 function where (arr, searchDetails) {
-  
-  
-  
-  console.log(arr, searchDetails)
+  const newArray = arr.filter(thing => thing.id == searchDetails.id)
+  return newArray
 }
+
